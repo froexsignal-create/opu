@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600;700&amp;display=swap');
+      .brand-title {
+        font-family: 'Hind Siliguri', 'FreeSans', sans-serif;
+        font-weight: 700;
+        fill: #14532D;
+      }
+      .brand-sub {
+        font-family: 'Hind Siliguri', 'FreeSans', sans-serif;
+        font-weight: 600;
+        fill: #14532D;
+        letter-spacing: 2px;
+      }
+      .flourish {
+        fill: none;
+        stroke: #14532D;
+        stroke-width: 5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .flourish-fine {
+        fill: none;
+        stroke: #14532D;
+        stroke-width: 3.5;
+        stroke-linecap: round;
+      }
+      .leaf {
+        fill: #448B30;
+      }
+      .steam {
+        fill: none;
+        stroke: #6E9B56;
+        stroke-width: 3;
+        stroke-linecap: round;
+      }
+      .pitha-line {
+        fill: #FFFDF9;
+        stroke: #14532D;
+        stroke-width: 4.5;
+        stroke-linejoin: round;
+      }
+      .pitha-dot {
+        fill: #14532D;
+      }
+    </style>
+  </defs>
+
+  <!-- Clean Canvas Background -->
+  <rect width="500" height="500" fill="#FFFFFF" rx="40" />
+
+  <!-- === TOP LEFT FLOURISHES & PULI PITHA === -->
+  <!-- Corner Swirl Top-Left -->
+  <path class="flourish-fine" d="M 120 180 C 100 170 85 145 95 125 C 105 105 130 115 130 135 C 130 150 115 160 105 155" />
+  <path class="flourish" d="M 130 185 C 110 200 85 200 75 220 C 65 240 85 260 95 260" />
+  
+  <!-- Crescent Puli Pitha (Top Left) -->
+  <g transform="translate(85, 210) rotate(-15)">
+    <!-- Pitha Shell -->
+    <path class="pitha-line" d="M 0 35 C 5 10 35 -5 60 10 C 65 25 55 45 35 50 C 15 55 5 45 0 35 Z" />
+    <!-- Crimped edge decoration dots/ruffles -->
+    <path class="flourish-fine" d="M 3 32 C 10 15 35 3 58 12" stroke-dasharray="2 6" stroke-width="4" />
+    <!-- Sesame/crust texture dots -->
+    <circle cx="25" cy="24" r="2" class="pitha-dot" />
+    <circle cx="35" cy="22" r="2.5" class="pitha-dot" />
+    <circle cx="45" cy="28" r="2" class="pitha-dot" />
+    <circle cx="30" cy="34" r="2.5" class="pitha-dot" />
+    <circle cx="20" cy="36" r="2" class="pitha-dot" />
+    <circle cx="40" cy="38" r="2" class="pitha-dot" />
+  </g>
+
+  <!-- === TOP RIGHT FLOURISHES & CLAY BOWL / POT === -->
+  <!-- Corner Swirl Top-Right -->
+  <path class="flourish-fine" d="M 380 180 C 400 165 415 140 405 120 C 395 100 370 110 370 130 C 370 145 385 155 395 150" />
+  <path class="flourish" d="M 390 170 C 410 190 415 220 405 245 C 395 270 410 285 415 290" />
+
+  <!-- Clay Pot & Sweets Bowl (Top Right) -->
+  <g transform="translate(340, 195)">
+    <!-- Small traditional Pitcher / Kalshi in back -->
+    <path class="pitha-line" d="M 45 15 C 45 10 55 10 55 15 L 56 22 C 65 26 70 38 65 48 C 60 55 45 55 42 46 C 40 38 42 26 46 22 Z" />
+    <path class="flourish-fine" d="M 46 14 L 54 14" />
+    
+    <!-- Bowl of Sweets / Muri in front -->
+    <ellipse cx="28" cy="38" rx="28" ry="16" class="pitha-line" />
+    <!-- Muri / Sweet grains in bowl -->
+    <circle cx="16" cy="34" r="2" class="pitha-dot" />
+    <circle cx="24" cy="31" r="2.5" class="pitha-dot" />
+    <circle cx="32" cy="33" r="2" class="pitha-dot" />
+    <circle cx="40" cy="35" r="2.5" class="pitha-dot" />
+    <circle cx="20" cy="40" r="2" class="pitha-dot" />
+    <circle cx="28" cy="41" r="2.5" class="pitha-dot" />
+    <circle cx="36" cy="40" r="2" class="pitha-dot" />
+  </g>
+
+  <!-- === MAIN CALLIGRAPHY: "মায়ের" (TOP LINE) === -->
+  <g>
+    <!-- Left loop of "মা" -->
+    <path class="flourish" d="M 125 185 C 105 160 120 125 150 130 C 175 135 170 175 140 180" />
+    
+    <!-- Main stylized text "মায়ের" -->
+    <text x="250" y="200" text-anchor="middle" font-size="108" class="brand-title" letter-spacing="-1">মায়ের</text>
+    
+    <!-- Decorative underline flourish & crescent/tilak dot under "য়ের" -->
+    <path class="flourish-fine" d="M 228 226 C 235 240 265 240 272 226" />
+    <circle cx="250" cy="224" r="5" class="pitha-dot" />
+
+    <!-- Right loop flourish extending from "র" -->
+    <path class="flourish" d="M 355 145 C 385 135 410 165 390 195 C 375 215 350 200 365 180" />
+  </g>
+
+  <!-- === CENTER: GREEN LEAF WITH STEAM WISPS === -->
+  <g transform="translate(290, 205)">
+    <!-- Rising Steam Ribbons -->
+    <path class="steam" d="M 25 18 C 30 10 22 2 28 -8" />
+    <path class="steam" d="M 33 12 C 37 4 32 -4 38 -14" />
+    <!-- Fresh Green Leaf -->
+    <path class="leaf" d="M 0 35 C 5 20 22 10 32 18 C 36 28 26 42 10 44 C 3 44 0 40 0 35 Z" />
+    <!-- Leaf vein -->
+    <path d="M 3 36 Q 16 30 28 20" stroke="#FFFFFF" stroke-width="1.5" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- Middle Vine Swirls -->
+  <path class="flourish-fine" d="M 215 235 C 195 242 180 230 190 220 C 198 212 210 220 205 230" />
+  <path class="flourish-fine" d="M 320 235 C 335 245 350 235 345 225 C 340 215 325 220 330 232" />
+
+  <!-- === MAIN CALLIGRAPHY: "হেসেল" (BOTTOM LINE) === -->
+  <g>
+    <!-- Left sweeping swirl wrapping under 'হ' -->
+    <path class="flourish" d="M 98 285 C 80 320 105 350 145 345 C 175 340 185 305 145 295 C 115 288 100 315 105 340" />
+
+    <!-- Stylized "হেসেল" text -->
+    <text x="250" y="328" text-anchor="middle" font-size="114" class="brand-title" letter-spacing="-2">হেসেল</text>
+  </g>
+
+  <!-- === BOTTOM CENTER: ROLLED PATISHAPTA PITHA === -->
+  <g transform="translate(235, 305) rotate(22)">
+    <!-- Rolled Crepe / Patishapta Shell -->
+    <path class="pitha-line" d="M 0 8 C 2 3 12 0 38 3 C 44 4 48 8 46 14 C 44 20 38 23 10 21 C 2 20 -1 14 0 8 Z" fill="#FAF6EE" />
+    <!-- Roll Folds / Inner Swirl -->
+    <path class="flourish-fine" d="M 38 4 C 43 7 43 14 38 18 C 34 20 30 18 31 12 C 32 8 36 6 39 7" stroke-width="2.5" />
+    <!-- Delicate brown/khirsa spots -->
+    <ellipse cx="14" cy="11" rx="2" ry="1.5" class="pitha-dot" opacity="0.6" />
+    <ellipse cx="24" cy="12" rx="3" ry="2" class="pitha-dot" opacity="0.6" />
+  </g>
+
+  <!-- Bottom Vine Swirls Under Heshel -->
+  <path class="flourish" d="M 125 340 C 145 348 185 345 205 330" />
+  <path class="flourish" d="M 285 335 C 315 345 345 340 375 315 C 395 300 405 325 390 345 C 375 365 340 360 350 335" />
+  <path class="flourish-fine" d="M 305 335 C 330 355 320 375 300 370 C 285 365 290 348 305 350" />
+
+  <!-- Outer Framing Botanical Swirls -->
+  <path class="flourish-fine" d="M 390 260 C 415 280 400 310 395 330 C 390 350 410 365 400 380 C 390 395 370 385 375 365" />
+  <path class="flourish-fine" d="M 100 260 C 85 285 95 310 90 330" />
+
+  <!-- Underline Divider Arch -->
+  <path d="M 120 358 Q 250 362 380 358" stroke="#14532D" stroke-width="4.5" fill="none" stroke-linecap="round" />
+
+  <!-- === SUBTITLE: "হোমমেড খাবার" === -->
+  <g transform="translate(250, 415)">
+    <text x="0" y="0" text-anchor="middle" font-size="40" class="brand-sub">হোমমেড খাবার</text>
+  </g>
+</svg>

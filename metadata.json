@@ -1,0 +1,7 @@
+{
+  "name": "মায়ের হেসেল - হোমমেড খাবার",
+  "description": "মায়ের হেসেল - ১০০% খাঁটি উপাদানে তৈরি ঐতিহ্যবাহী ঘরোয়া পিঠা ও দেশীয় খাঁটি খাদ্যপণ্যের অনলাইন শপ।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
